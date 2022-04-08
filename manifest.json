@@ -1,0 +1,38 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "data/icons/16.png",
+         "32": "data/icons/32.png",
+         "48": "data/icons/48.png",
+         "64": "data/icons/64.png"
+      },
+      "default_popup": "data/interface/index.html?popup",
+      "default_title": "MyBook for FaceBook"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "content-style.css" ],
+      "matches": [ "*://facebook.com/*", "*://www.facebook.com/*", "*://m.facebook.com/*","*://*.music.facebook.com/*" ]
+   } ],
+   "host_permissions": [ "*://*.facebook.com/*" ],
+   "description": "Change the color theme of Facebook is Glow!",
+   "externally_connectable": {
+      "matches": [ "*://*.facebook.com/*" ]
+   },
+   "homepage_url": "https://www.codehemu.com/2022/04/facebook-theme.html",
+   "icons": {
+      "128": "data/icons/128.png",
+      "16": "data/icons/16.png",
+      "32": "data/icons/32.png",
+      "48": "data/icons/48.png",
+      "64": "data/icons/64.png"
+   },
+   "manifest_version": 3,
+   "name": "MyBook for FaceBook™",
+   "permissions": [ "storage" ],
+   "short_name": "mybook-for-facebook",
+   "version": "3.3.4"
+   
+}
